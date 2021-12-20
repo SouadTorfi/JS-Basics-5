@@ -8,10 +8,16 @@
 </head>
 <body>
     
+    
+    <input type="text" name="" id="name" placeholder="Enter your name:">
+    <input type="button" id="button" value="Submit">
     <script>
-     let name = prompt("what is your name: ");
-     alert("Hello " + name);
-
+      document.getElementById('button').addEventListener('click',function(){
+        let name= document.getElementById('name').value;
+     
+     alert(`Hello ${name}`)
+      });
+  
     </script>
 </body>
 </html>
